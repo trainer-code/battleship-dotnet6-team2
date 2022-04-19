@@ -1,0 +1,24 @@
+  
+anguage: csharp
+mono: none
+dist: xenial
+dotnet: 6.0
+install:
+  - dotnet restore
+script:
+  - dotnet build
+  - dotnet test
+  - dotnet publish -r linux-x64 -c release
+
+before_deploy: 
+ - tar -czf battleship.tar.gz ./Battleship.Ascii/bin/Release/net6.0/linux-x64/publish
+ - cp ./battleship.tar.gz ./dist/battleship.tar.gz
+deploy: 
+ provider: pages
+ skip-cleanup: true
+ target_branch: gh-pages
+ github-token: $GITHUB_TOKEN
+ local_dir: dist
+
+ on:
+  branch: main

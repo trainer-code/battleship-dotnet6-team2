@@ -1,0 +1,4 @@
+{
+    "dotnet-test-explorer.testProjectPath": "**/*[Test|ATDD]*/*.csproj",
+    "cucumberautocomplete.steps": ["**/Battleship.GameController.ATDD/*.cs"]
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico">
+    <title>
+        Download release
+    </title>
+    <style>
+	ascii-art { font-family: monospace; white-space: pre;}
+	body { font-size: large;}
+    </style>
+</head>
+
+<body>
+
+    <body style="background-image: url(https://background-tiles.com/overview/blue/patterns/large/1051.png)">
+	<pre style="margin: 0; font-size: 15px; background-color: #b0f7ff">
+                                                |__
+                                                |\\/
+                                                ---
+                                                / | [
+                                         !      | |||
+                                       _/|     _/|-++'
+                                   +  +--|    |--|--|_ |-
+                                { /|__|  |/\\__|  |--- |||__/
+                               +---------------___[}-_===_.'____                 /\\
+                           ____`-' ||___-{]_| _[}-  |     |_[___\\==--            \\/   _
+            __..._____--==/___]_|__|_____________________________[___\\==--____,------' .7
+           |                        Welcome to Battleship                         BB-61/
+           \\_________________________________________________________________________|
+	</pre>
+<div style="background-color: blue; min-height: 20px; position: relative; top:-19px;"></div>
+
+<div style="background-color : #e7ffb0; padding: 10px;">
+	<div style="text-align: center">
+	<a href="./battleship.tar.gz">DOWNLOAD THE ULTIMATE BATTLESHIP GAME HERE!</a>
+	</div>
+	<h2>Instructions</h2>
+	<ol>
+		<li>Download the battleship zip package from the link above</li>
+		<li>Unzip the package using WinZip/7-Zip/tar or similar software</li>
+		<li>Open the extracted directory. You need to have a bin directory</li>
+    </ol>
+    <h3> Instruction for Linux</h3>
+	<ol>
+		<li>Run following in a terminal ./bin/Release/net6.0/linux-x64/publish/Battleship.Ascii</li>
+        <li>If you do not have linux, you can use docker to run the linux version. In a terminal run following:</li>
+        <li>docker run -it -v ${PWD}:/battleship mcr.microsoft.com/dotnet/sdk:6.0 bash</li>
+        <li>then run following command inside the docker container:</li>
+        <li>./bin/Release/net6.0/linux-x64/publish/Battleship.Ascii</li>
+	</ol>
+	<h3> Instruction for Windows (NOT READY)</h3>
+	<ol>
+		<li>Double click on ./bin/Release/net6.0/win-x64/publish/Battleship.Ascii.exe</li>
+	</ol>
+	<h3> Instruction for Mac (NOT READY)</h3>
+	<ol>
+		<li>Run following in a terminal ./bin/Release/net6.0/osx-x64/publish/Battleship.Ascii</li>
+    </ol>
+   
+</div>
+    </body>
+</body>
+
+</html>
